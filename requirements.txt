@@ -14,5 +14,3 @@ multimethod==1.9.1
 ftfy
 regex
 tqdm
-git+https://github.com/openai/CLIP.git
-git+https://github.com/facebookresearch/pytorch3d.git@v0.7.2

@@ -274,7 +274,7 @@ def load_cfg():
     def _load_argparse_cfg(args_dict: Dict[str, Any]):
         output = {}
         for key, arg in args_dict.items():
-            arg = literal_eval(arg)
+            # arg = literal_eval(arg)
             if "." in key:
                 split_keys = key.split(".")
                 set_key = split_keys.pop()

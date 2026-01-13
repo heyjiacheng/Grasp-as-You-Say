@@ -22,7 +22,7 @@ class Hand_Config:
 
 class Object_mesh:
     def __init__(self) -> None:
-        data_root_path = "/home/yilin/2024/TOGG/data"
+        data_root_path = "./data/oakink"
         self.data_dir = os.path.join(data_root_path, "shape")
         oi_shape_dir = os.path.join(self.data_dir, "oakink_shape_v2")
         meta_dir = os.path.join(self.data_dir, "metaV2")

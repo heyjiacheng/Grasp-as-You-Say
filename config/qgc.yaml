@@ -18,22 +18,22 @@ data:
   name: refinement
   train:
     data_root: &data_root "./data/oakink"
-    pose_path: ./Experiments/idgc/test_results/epoch_1_train/matched_results.json
+    pose_path: ./Experiments/idgc/test_results/epoch_200_train/matched_results.json
     sample_in_pose: &sample_in_pose True
     guidance_type: *guidance_type
     rotation_type: *rotation_type
     norm_type: *norm_type 
-    batch_size: 32
+    batch_size: 16
     num_workers: 8
 
   val:
     data_root: *data_root
-    pose_path: ./Experiments/idgc/test_results/epoch_1_test/matched_results.json
+    pose_path: ./Experiments/idgc/test_results/epoch_200_test/matched_results.json
     sample_in_pose: True
     guidance_type: *guidance_type
     rotation_type: *rotation_type
     norm_type: *norm_type 
-    batch_size: 32
+    batch_size: 16
     num_workers: 8
 
 model:
